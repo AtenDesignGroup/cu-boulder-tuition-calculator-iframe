@@ -93,8 +93,10 @@
       iFrameResize(
         {
           checkOrigin: false,
+          iframeResizerEnable: true,
+          autoResize: true,
           heightCalculationMethod: "bodyScroll",
-          warningTimeout: 10000,
+          warningTimeout: 0,
         },
         "#appIframe"
       );
