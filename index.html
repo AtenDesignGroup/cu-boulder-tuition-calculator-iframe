@@ -78,24 +78,23 @@
           width="100%"
           scrolling="no"
           frameborder="0"
-          style="width: 1px; min-width: 100%;"
+          style="width: 1px; min-width: 100%"
         ></iframe>
       </div>
-      <div class="sidebar">
-        <!-- <img src="./images/sidebar.png" alt="hero" /> -->
-      </div>
+      <div class="sidebar"></div>
     </div>
 
     <div class="footer">
       <img src="./images/footer.png" alt="hero" />
     </div>
+
     <script type="text/javascript" src="./iframeResizer.min.js"></script>
     <script type="text/javascript">
       iFrameResize(
         {
-          log: false,
           checkOrigin: false,
           heightCalculationMethod: "bodyScroll",
+          warningTimeout: 10000,
         },
         "#appIframe"
       );
